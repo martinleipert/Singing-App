@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+</android.support.constraint.ConstraintLayout>
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="10">
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/plot"
+            style="@style/APDefacto.Dark"
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_rowWeight=".9"
+            ap:domainLineColor="@color/ap_transparent"
+            ap:domainOriginLineColor="@color/ap_transparent"
+            ap:domainTitle=""
+            ap:legendVisible="false"
+            ap:lineLabelRotationBottom="-45"
+            ap:lineLabels=""
+            ap:marginBottom="0dp"
+            ap:marginLeft="0dp"
+            ap:marginRight="0dp"
+            ap:marginTop="0dp"
+            ap:rangeLineColor="@color/ap_transparent"
+            ap:rangeOriginLineColor="@color/ap_transparent"
+
+            ap:rangeTitle=""
+            ap:renderMode="use_background_thread" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_row="1"
+            android:layout_rowWeight=".1"
+            android:text="TextView example text"
+            android:textFontWeight="bold" />
+    </GridLayout>
+
+
+</LinearLayout>

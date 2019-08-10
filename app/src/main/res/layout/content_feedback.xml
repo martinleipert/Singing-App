@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Feedback.Feedback"
+    tools:showIn="@layout/activity_feedback">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="7"
+        android:minHeight="30dp"
+        android:layout_margin="@dimen/default_gap"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/label_matchedTones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/matched_tones_en"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_rowWeight="1"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_matchedTones"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="50dp"
+            android:layout_column="0"
+
+            android:layout_row="1"
+            android:layout_rowWeight="1"/>
+
+        <TextView
+            android:id="@+id/label_overallScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overall_score_en"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="87dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_rowWeight="1"/>
+
+        <TextView
+            android:id="@+id/textView_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 of 100 points"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="121dp"
+            android:layout_column="0"
+
+            android:layout_row="3"
+            android:layout_rowWeight="1"/>
+
+        <TextView
+            android:id="@+id/label_overallRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overall_rating_en"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="178dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_rowWeight="1"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_overall"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_row="5"
+            android:layout_rowWeight="2"
+            android:layout_column="0"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+    </GridLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

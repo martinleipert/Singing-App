@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SingingApp</string>
+    <string name="title_activity_feedback">Feedback</string>
+
+    <string name="matched_tones_en">Your matched Tones</string>
+    <string name="overall_rating_en">Overall Rating</string>
+    <string name="overall_score_en">Overall Score</string>
+
+</resources>
